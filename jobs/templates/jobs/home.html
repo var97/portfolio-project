@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+    <title>Varun Agarwal</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -21,7 +21,7 @@
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Varun Agarwal</a>
+        <a class="navbar-brand" href="{% url 'home' %}">Varun Agarwal</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,7 +29,7 @@
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" href="#">Twitter</a>
             <a class="nav-item nav-link" href="{% static 'varunagarwalresume.pdf' %}">Resume</a>
-            <a class="nav-item nav-link" href="#">Blog</a>
+            <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
           </div>
         </div>
       </nav>
@@ -40,11 +40,11 @@
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Hi, I'm Varun.</h1>
-          <p class="lead text-muted">Hi, I am Varun Agarwal. I love to do <b>front-end</b> & <b>back-end</b> development.</p> <p class="lead text-muted">Just Go ahead & Give me a Problem and I'll provide you with a User-Friendly Solutions.</p>
+          <p class="lead text-muted">Hi, I am Varun Agarwal. I love to do <b>front-end</b> & <b>back-end</b> development.Just Go ahead & Give me a Problem and I'll provide you with the User-Friendly Solutions.</p>
           <p>
             <a href="mailto:varun1997agarwal@gmail.com" class="btn btn-primary my-2">Email Me</a>
           </p>
-          <img src="{% static 'varun.jpg'%}" />
+          <img  src="{% static 'varun.jpg' %}" height="300"/>
         </div>
       </section>
 
